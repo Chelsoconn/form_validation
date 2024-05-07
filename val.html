@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up Form</title>
+  <script src="val.js"></script> 
+  <link rel="stylesheet" href="val.css">
+</head>
+
+<body>
+  <h1>Sign Up Form</h1>
+  <p id="error"></p>
+
+<form id="signup" novalidate>
+  <div>
+    <label for="first-name">First Name:</label>
+    <input type="text" id="first-name" name="first-name" value="">
+    <p class="message" id="first-name-error"></p>
+  </div>
+  <div>
+    <label for="last-name">Last Name:</label>
+    <input type="text" id="last-name" name="last-name" value="">
+    <p class="message" id="last-name-error"></p>
+  </div>
+  <div>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" value="" placeholder="someone@example.com">
+    <p class="message" id="email-error"></p>
+  </div>
+  <div>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" value="">
+    <p class="message" id="password-error"></p>
+  </div>
+  <div>
+    <label for="phone-number">Phone Number:</label>
+    <input type="tel" id="phone-number" name="phone-number" value="" placeholder="111-222-3333">
+    <p class="message" id="phone-number-error"></p>
+  </div>
+
+  <div class="credit-card-form">
+    <label class="credit-card-label" for="credit">Credit Card:</label>
+    <div class="credit-card-inputs">
+      <input type="text" class="credit-card-input" placeholder="XXXX" maxlength="4">
+      <input type="text" class="credit-card-input" placeholder="XXXX" maxlength="4">
+      <input type="text" class="credit-card-input" placeholder="XXXX" maxlength="4">
+      <input type="text" class="credit-card-input" placeholder="XXXX" maxlength="4">
+    </div>
+    <p class="message credit-card-error" id="credit-card-error"></p>
+  </div>
+  
+  
+  
+  <div>
+    <button type="submit">Sign Up</button>
+  </div>
+</form>
+
+</body>
